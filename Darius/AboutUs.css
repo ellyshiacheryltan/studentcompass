@@ -1,0 +1,319 @@
+body {
+    font-family: 'Kodchasan';
+    background-color: #F7F4EB; 
+    margin: 0;
+    padding: 0;
+    color: #333; /* Adjusted for better contrast */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensures footer stays at the bottom */
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.logo {
+height: 80px;
+width: auto;
+margin-left: 20px; 
+}
+
+.logo-footer {
+    height: 60px;
+    width: 100;
+    margin-left: 20px; 
+    margin-bottom: 0;
+}
+
+.navigation {
+display: flex;
+}
+
+.nav-link {
+font-weight: bold;
+color: #568366;
+text-decoration: none;
+padding: 8px 16px;
+font-size: 18px;
+margin-right: 10px;
+}
+
+.nav-link.active {
+color: #FFFFFF;
+background-color: #568366;
+border-radius: 4px;
+}
+.nav-link,.dropdown{
+    line-height: 20px;
+vertical-align: middle;
+}
+
+/* Other styles remain the same */
+
+footer {
+background-color: #568366; 
+color: #fff;
+width: 100%;
+padding: 10px 20px; 
+box-sizing: border-box;
+margin-top: auto; 
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;; /* Aligns links to the right */
+align-items: center;
+
+}
+
+.footer-text {
+    display: flex; 
+    align-items: center; 
+    margin-right: 20px; 
+}
+
+.footer-link {
+font-size: 16px;
+color: #fff; /* Changed to white for better contrast */
+text-decoration: none;
+margin: 0 10px;
+padding: 5px 10px;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+.footer-link:hover {
+background-color: #466344; /* Darker shade for hover state */
+}
+
+/* Media query adjustments */
+
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: flex-start; /* Aligns logo and nav to the left */
+}
+
+.logo,
+.navigation {
+    margin-left: 10px; /* Adjusts margin for mobile */
+}
+
+.footer-content {
+    justify-content: center; /* Center aligns the links on mobile */
+}
+
+.footer-link {
+    width: auto; /* Allows links to size according to content */
+    margin-bottom: 0
+; /* Removes the bottom margin from the footer links in mobile view */
+}
+}
+
+/* Ensure the main content takes up the available space */
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.about-us {
+font-family: 'Krona One';
+flex: 1; 
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.about-us article {
+    max-width: 800px; /* or any other max-width you prefer */
+    margin: 0 auto; /* This centers the article */
+    color: #568366; /* This sets the text color to the green used in your CSS */
+}
+
+.about-us article p {
+    font-family: 'Kodchasan';
+    color: #014921; /* This sets the paragraph text color to green */
+}
+.about-us h1 {
+    color: #568366; /* This sets the paragraph text color to green */
+}
+
+@media (max-width: 768px) {
+.container {
+width: 95%;
+margin: 10px auto;
+padding: 10px;
+}
+
+header,
+.subscribe-section form,
+footer {
+    flex-direction: column;
+}
+
+.navigation {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    margin-bottom: 10px; /* Add space between links in mobile view */
+}
+
+.footer-content {
+    flex-direction: column;
+}
+
+.footer-link {
+    width: 100%;
+    margin-bottom: 5px; /* Add space between footer links in mobile view */
+}
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown-toggle {background-color: #3e8e41;}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    align-self: center;
+}
+
+.logo {
+    padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 1.5vw;
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: #014921;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 2vw;
+}
+
+nav ul li a:hover {
+    color: #ee8f00;
+}
+
+/* dropdown button */
+    .dropbtn {
+        background-color: #F7F4EB;
+        font-family: 'Kodchasan';
+        color: #014921;
+        font-size: 22px;
+        border: none;
+        cursor: pointer;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #E8E7D5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #014921;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        color: #ee8f00;
+    }
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #568366;
+}
+
+footer img {
+    width: 9vw;
+    padding: 1vw;
+}
+
+footer ul {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 35%;
+    margin: 0;
+}
+
+footer ul li {
+    color: #F7F4EB;
+}
+
+footer ul li a {
+    color: #F7F4EB;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #FFCE55;
+}
+
+.follow-links {
+    display: flex;
+}
+
+i {
+    padding-left: 1vw;
+}

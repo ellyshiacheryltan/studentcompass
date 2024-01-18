@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #F7F4EB;
+    color: #568366;
+    font-family: 'Kodchasan';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* content */
+    .submit-message {
+        text-align: center;
+        font-family: 'KronaOne';
+        color: #014921;
+        font-size: 36px;
+        width: 900px;
+        align-self: center;
+        padding: 154.5px;
+        padding-bottom: 244.5px;
+    }
+
+/* header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        width: 100%;
+        align-self: center;
+    }
+
+    .logo {
+        padding: 40px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        padding: 1.5vw;
+        padding-right: 0;
+    }
+
+    nav ul li a {
+        color: #014921;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 2vw;
+    }
+
+    nav ul li a:hover {
+        color: #ee8f00;
+    }
+
+    /* dropdown button */
+        .dropbtn {
+            background-color: #F7F4EB;
+            font-family: 'Kodchasan';
+            color: #014921;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #E8E7D5;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #014921;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            color: #ee8f00;
+        }
+
+/* footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #568366;
+    }
+
+    footer img {
+        width: 9vw;
+        padding: 1vw;
+    }
+
+    footer ul {
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        width: 35%;
+        margin: 0;
+    }
+
+    footer ul li {
+        color: #F7F4EB;
+    }
+
+    footer ul li a {
+        color: #F7F4EB;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover {
+        color: #FFCE55;
+    }
+
+    .follow-links {
+        display: flex;
+    }
+
+    i {
+        padding-left: 1vw;
+    }
+
+
+/* fonts */
+    @font-face {
+        font-family: 'Kodchasan';
+        src: url('assets/fonts/Kodchasan-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'KronaOne';
+        src: url('assets/fonts/KronaOne-Regular.ttf') format('truetype');
+    }

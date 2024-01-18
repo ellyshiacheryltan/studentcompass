@@ -1,0 +1,206 @@
+body {
+    background-color: #F7F4EB;
+    margin: 0;
+    color: #568366; 
+    font-family: 'Kodchasan';
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+    }
+
+    .logo {
+        padding: 2vw;
+    }
+
+    a, button{
+        cursor: pointer;
+    
+    }
+    
+    nav{
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        width: 250px;
+    }
+    
+    .navigation{
+        position: fixed;
+        right: -500px;
+        width: 350px;
+        height: 100%;
+        background-color: #F7F4EB;
+        transition: .5s;
+    }
+    
+    .navigation ul li{
+        color: #014921;
+        text-align: right;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 20px 30px;
+        border-bottom: 1pt solid rgb(255, 85, 0);
+    }
+    
+    .hamburger, .bar{
+        position: fixed;
+    }
+    
+    .hamburger{
+        display: block;
+        top: 5%;
+        left: 95%;
+        width: 30px;
+        height:30px;
+        transform: translateY(-50%);
+        border: 0;
+        background: 0 0;
+    
+    }
+    
+    .bar{
+        top: 3px;
+        background: #014921;
+        width:100%;
+        height: 4px;
+        transition: all .3s ease-in;
+    }
+    
+    #bar2{
+        top: 11px;
+    }
+    #bar3{
+        top: 19px;
+    }
+    .navigation.active{
+        right: 0;
+    }
+    .hamburger.open #bar1{
+        background-color: #014921;
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+    .hamburger.open #bar2{
+        background-color: transparent;
+    }
+    .hamburger.open #bar3{
+        background-color: #014921;
+        transform: rotate(45deg) translate(6px, -5px);
+    }
+
+/* content */
+    .contents {
+        display: flex;
+        justify-content: center;
+        margin: 3vw;
+        margin-top: 0;
+        padding: 3vw;
+        padding-top: 0;
+        padding-right: 0;
+        width: 90%;
+    }
+
+    .article-text {
+        margin-right: -5vw;
+    }
+
+    .article-text h2 {
+        font-size: 32px;
+        margin-bottom: -2px;
+    }
+
+    .article-text img {
+        width: 50%;
+        margin: 1.5vw;
+        margin-left: 0;
+    }
+
+/* other articles links (sidebar) - related articles */
+
+    .related-articles {
+        width: 35%;
+        border-left: 1px solid #568366;
+        padding: 2vw;
+        padding-right: 0;
+        padding-top: 0;
+        margin-right: -3vw;
+    }
+
+    .related-articles h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    article {
+        padding: 1.5vw;
+    }
+
+    .card1 {
+        padding-top: 5px;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    article a {
+        color: #568366;
+        text-decoration: none;
+
+    }
+
+    article a:hover {
+        color: darkkhaki;
+    }
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #568366;
+}
+
+footer img {
+    width: 7vw;
+    padding: 1vw;
+}
+
+footer ul {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 30%;
+}
+
+footer ul li a {
+    color: #F7F4EB;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: darkkhaki;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'YesevaOne';
+    src: url('assets/fonts/YesevaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kodchasan';
+    src: url('assets/fonts/Kodchasan-Regular.ttf') format('truetype');
+}
