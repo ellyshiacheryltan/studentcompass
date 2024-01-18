@@ -8,7 +8,7 @@ members:
 # Description of product:
 Our product is a student survival guide website called Student Compass. It is aimed for students, to give them advice and guidance
 on matters that they are struggling with daily(based on our survey and interviews); such as cooking, budgeting, and socialising. 
-The website is currently finished...
+The website currently has all the things in the MoSCoW chart covered, however there are a few positioning issues in the Finances, About Us, and Contact Us pages.
 
 # Copyright statements:
 1. Hamburger menu: https://www.youtube.com/watch?v=BN6fH1nRDxA
